@@ -2,7 +2,6 @@
 const express = require('express');
 const dotenv = require('dotenv').config();
 
-//Importojme middlewarey
 const {errorHandler}= require('./middlewares/errorMiddleware');
 
 //Krijojme nje varaibel per porten
