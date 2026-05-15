@@ -1,3 +1,4 @@
+
 const express = require('express');
 const dotenv = require('dotenv').config();
 
@@ -11,13 +12,14 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Routes
+
 app.use('/api/tasks', require('./routes/taskRoutes'));
-
-// Error middleware
+g
 app.use(errorHandler);
-
-// Start server
+it
 app.listen(port, () => {
-console.log(`Server listening on port ${port}`);
+console.log(`
+    Server listening on port ${port}`);
 });
+
+

@@ -11,3 +11,12 @@ router.delete('/:id', deleteTask);
 
 
 	module.exports = router;
+
+const { getTasks, setTask, updateTask, deleteTask } = require('../controllers/taskControllers')
+
+router.get('/', getTasks)
+router.post('/', setTask)
+router.put('/:id', updateTask)
+router.delete('/:id', deleteTask)
+
+module.exports = router;
